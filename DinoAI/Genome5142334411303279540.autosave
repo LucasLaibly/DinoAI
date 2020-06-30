@@ -20,7 +20,7 @@ class Genome {
   //sometimes the nodes will not be in order
   Node getNode(int nodeNumber) 
   {
-    
+    return null;
   }
 
   //---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -34,7 +34,7 @@ class Genome {
   //feeding in input values into the NN and returning output array
   float[] feedForward(float[] inputValues) 
   {
-    
+    return null;
   }
 
   //----------------------------------------------------------------------------------------------------------------------------------------
@@ -127,7 +127,7 @@ class Genome {
   
   //----------------------------------------------------------------------------------------------------------------------------------------
   //draw the genome on the screen
-  void drawGenome(int startX, int startY, int w, int h)
+  void drawGenome(int startX, int startY, int w, int h) 
   {
     
   }

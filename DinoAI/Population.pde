@@ -1,6 +1,6 @@
 class Population {
-  ArrayList<Player> pop = new ArrayList<Player>();
   Player bestPlayer;//the best ever player 
+  
   int bestScore =0;//the score of the best ever player
   //int species = 0;
   int gen;
@@ -9,6 +9,7 @@ class Population {
   ArrayList<connectionHistory> innovationHistory = new ArrayList<connectionHistory>();
   ArrayList<Player> genPlayers = new ArrayList<Player>();
   ArrayList<Species> species   = new ArrayList<Species>();
+  ArrayList<Player> pop        = new ArrayList<Player>();
 
   boolean massExtinctionEvent = false;
   boolean newStage = false;
@@ -16,13 +17,9 @@ class Population {
   //------------------------------------------------------------------------------------------------------------------------------------------
   //constructor
   Population(int size) {
-
-    for (int i =0; i<size; i++) {
-      pop.add(new Player());
-      pop.get(i).brain.generateNetwork();
-      pop.get(i).brain.mutate(innovationHistory);
-    }
+    
   }
+  
   //------------------------------------------------------------------------------------------------------------------------------------------
   //update all the players which are alive
   void updateAlive() {

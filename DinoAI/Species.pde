@@ -1,19 +1,23 @@
 class Species {
-  ArrayList<Player> players = new ArrayList<Player>();
-  float bestFitness = 0;
-  Player champ;
-  float averageFitness = 0;
-  int staleness = 0;//how many generations the species has gone without an improvement
   Genome rep;
+  
+  Player champ;
+  
+  float bestFitness = 0;
+  float averageFitness = 0;
+  
+  int staleness = 0;//how many generations the species has gone without an improvement
+  
+  ArrayList<Player> players = new ArrayList<Player>();
 
   //--------------------------------------------
   //coefficients for testing compatibility 
   float excessCoeff = 1;
   float weightDiffCoeff = 0.5;
   float compatibilityThreshold = 3;
+  
   //------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
   //empty constructor
-
   Species() {
     
   }
@@ -33,7 +37,7 @@ class Species {
   //------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
   //add a player to the species
   void addToSpecies(Player p) {
-    players.add(p);
+    
   }
 
   //------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
@@ -61,7 +65,6 @@ class Species {
     
   }
   //-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
   //gets baby from the players in this species
   Player giveMeBaby(ArrayList<connectionHistory> innovationHistory) {
     

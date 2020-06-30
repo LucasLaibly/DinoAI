@@ -46,6 +46,7 @@ class Player {
 
   void look() {
     
+<<<<<<< HEAD
    
   }
 
@@ -53,10 +54,18 @@ class Player {
   //gets the output of the brain then converts them to actions
   void think() {
 
+=======
+  }
+  
+  //---------------------------------------------------------------------------------------------------------------------------------------------------------
+  //gets the output of the brain then converts them to actions
+  void think() {
+    
+>>>>>>> develop
   }
   
   //---------------------------------------------------------------------------------------------------------------------------------------------------------  
-  //returns a clone of this player with the same brian
+  //returns a clone of this player with the same brain
   Player clone() {
     
   }
