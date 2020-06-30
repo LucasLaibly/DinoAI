@@ -5,9 +5,10 @@ class Population {
   //int species = 0;
   int gen;
   //int nextConnectionNumber;
+  
   ArrayList<connectionHistory> innovationHistory = new ArrayList<connectionHistory>();
   ArrayList<Player> genPlayers = new ArrayList<Player>();
-  ArrayList<Species> species = new ArrayList<Species>();
+  ArrayList<Species> species   = new ArrayList<Species>();
 
   boolean massExtinctionEvent = false;
   boolean newStage = false;
