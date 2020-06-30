@@ -8,34 +8,40 @@ class Genome {
   int biasNode;
 
   ArrayList<Node> network = new ArrayList<Node>();//a list of the nodes in the order that they need to be considered in the NN
+  
   //---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  Genome(int in, int out) {
+  Genome(int in, int out) 
+  {
     
   }
 
   //-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
   //returns the node with a matching number
   //sometimes the nodes will not be in order
-  Node getNode(int nodeNumber) {
-    
+  Node getNode(int nodeNumber) 
+  {
+    return null;
   }
 
   //---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
   //adds the conenctions going out of a node to that node so that it can acess the next node during feeding forward
-  void connectNodes() {
+  void connectNodes() 
+  {
     
   }
 
   //---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
   //feeding in input values into the NN and returning output array
-  float[] feedForward(float[] inputValues) {
-    
+  float[] feedForward(float[] inputValues) 
+  {
+    return null;
   }
 
   //----------------------------------------------------------------------------------------------------------------------------------------
   //sets up the NN as a list of nodes in order to be engaged 
 
-  void generateNetwork() {
+  void generateNetwork() 
+  {
     
   }
   //-----------------------------------------------------------------------------------------------------------------------------------------
@@ -43,70 +49,86 @@ class Genome {
   //it does this by picking a random connection and disabling it then 2 new connections are added 
   //1 between the input node of the disabled connection and the new node
   //and the other between the new node and the output of the disabled connection
-  void addNode(ArrayList<connectionHistory> innovationHistory) {
+  void addNode(ArrayList<connectionHistory> innovationHistory) 
+  {
     
   }
 
   //------------------------------------------------------------------------------------------------------------------
   //adds a connection between 2 nodes which aren't currently connected
-  void addConnection(ArrayList<connectionHistory> innovationHistory) {
+  void addConnection(ArrayList<connectionHistory> innovationHistory) 
+  {
     
   }
+  
   //-------------------------------------------------------------------------------------------------------------------------------------------
-  boolean randomConnectionNodesAreShit(int r1, int r2) {
-    
+  boolean randomConnectionNodesAreShit(int r1, int r2) 
+  {
+    return false;
   }
 
   //-------------------------------------------------------------------------------------------------------------------------------------------
   //returns the innovation number for the new mutation
   //if this mutation has never been seen before then it will be given a new unique innovation number
   //if this mutation matches a previous mutation then it will be given the same innovation number as the previous one
-  int getInnovationNumber(ArrayList<connectionHistory> innovationHistory, Node from, Node to) {
-    
+  int getInnovationNumber(ArrayList<connectionHistory> innovationHistory, Node from, Node to) 
+  {
+    return 0;
   }
   //----------------------------------------------------------------------------------------------------------------------------------------
 
   //returns whether the network is fully connected or not
-  boolean fullyConnected() {
-    
+  boolean fullyConnected() 
+  {
+    return false;
   }
 
   //-------------------------------------------------------------------------------------------------------------------------------
   //mutates the genome
-  void mutate(ArrayList<connectionHistory> innovationHistory) {
+  void mutate(ArrayList<connectionHistory> innovationHistory) 
+  {
     
   }
 
   //---------------------------------------------------------------------------------------------------------------------------------
   //called when this Genome is better that the other parent
-  Genome crossover(Genome parent2) {
-    
+  Genome crossover(Genome parent2) 
+  {
+    return null;
   }
 
   //----------------------------------------------------------------------------------------------------------------------------------------
   //create an empty genome
-  Genome(int in, int out, boolean crossover) {
+  Genome(int in, int out, boolean crossover) 
+  {
     
   }
+  
   //----------------------------------------------------------------------------------------------------------------------------------------
   //returns whether or not there is a gene matching the input innovation number  in the input genome
-  int matchingGene(Genome parent2, int innovationNumber) {
-    
+  int matchingGene(Genome parent2, int innovationNumber) 
+  {
+    return 0;
   }
+  
   //----------------------------------------------------------------------------------------------------------------------------------------
   //prints out info about the genome to the console 
-  void printGenome() {
+  void printGenome() 
+  {
     
   }
 
   //----------------------------------------------------------------------------------------------------------------------------------------
   //returns a copy of this genome
-  Genome clone() {
-    
+  Genome clone() 
+  {
+    return null;
   }
+  
   //----------------------------------------------------------------------------------------------------------------------------------------
   //draw the genome on the screen
-  void drawGenome(int startX, int startY, int w, int h) {
+  void drawGenome(int startX, int startY, int w, int h) 
+  {
     
   }
 }

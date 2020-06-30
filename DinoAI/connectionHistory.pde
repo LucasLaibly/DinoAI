@@ -1,9 +1,11 @@
 class connectionHistory {
+  
   int fromNode;
   int toNode;
   int innovationNumber;
 
   ArrayList<Integer> innovationNumbers = new ArrayList<Integer>();//the innovation Numbers from the connections of the genome which first had this mutation 
+  
   //this represents the genome and allows us to test if another genoeme is the same
   //this is before this connection was added
 
@@ -15,6 +17,7 @@ class connectionHistory {
     innovationNumber = inno;
     innovationNumbers = (ArrayList)innovationNos.clone();
   }
+  
   //---------------------------------------------------------------------------------------------------------------------------------------------------------
   //returns whether the genome matches the original genome and the connection is between the same nodes
   boolean matches(Genome genome, Node from, Node to) {

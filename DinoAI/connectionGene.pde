@@ -1,16 +1,21 @@
 //a connection between 2 nodes
 class connectionGene {
   Node fromNode;
+  
   Node toNode;
+  
   float weight;
+  
   boolean enabled = true;
+  
   int innovationNo;//each connection is given a innovation number to compare genomes
+  
   //---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
   //constructor
   connectionGene(Node from, Node to, float w, int inno) {
-    fromNode = from;
-    toNode = to;
-    weight = w;
+    fromNode     = from;
+    toNode       = to;
+    weight       = w;
     innovationNo = inno;
   }
 
@@ -36,9 +41,6 @@ class connectionGene {
   //----------------------------------------------------------------------------------------------------------
   //returns a copy of this connectionGene
   connectionGene clone(Node from, Node  to) {
-    connectionGene clone = new connectionGene(from, to, weight, innovationNo);
-    clone.enabled = enabled;
-
-    return clone;
+    
   }
 }
